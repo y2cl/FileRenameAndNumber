@@ -76,3 +76,10 @@ status_label = tk.Label(root, text="")
 status_label.grid(row=4, column=1, padx=5, pady=5)
 
 root.mainloop()
+
+# Created by J Horsley III
+# LiveJournal Blog Scrapper Ver. 0.3
+# Provided under GNU GPL v3 license, mofidy and use as you want.
+# If you like this script, check out my comics on my website below. They are funny and will make you laugh, cry, or cringe. 
+# https://y2cl.net
+# https://github.com/y2cl/ljextractor
