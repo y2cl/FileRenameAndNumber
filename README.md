@@ -1,4 +1,4 @@
-# File Renamer Script (Python Version)
+# File Renamer Script
 A simple Python script that renames files in a selected folder with a custom prefix and numbered suffix.
 
 ## Description
@@ -10,6 +10,7 @@ This script allows you to select a folder and rename all files within it with a 
 * Allows you to specify a word to look for in file names
 * Case-insensitive search
 * Handles potential errors (e.g., permission issues)
+* Option to rename more files or close the program after renaming
 
 ## Requirements
 
@@ -27,9 +28,10 @@ This script allows you to select a folder and rename all files within it with a 
 
 1. Run the script by executing `python file_renamer.py`
 2. Enter a name for the files when prompted
-3. Enter a word to look for in file names when prompted
+3. Enter a word to look for in file names when prompted (optional)
 4. Select the folder containing the files to rename when prompted
 5. The script will rename all files in the selected folder with the specified prefix and numbered suffix
+6. After renaming the files, you will have the option to rename more files or close the program
 
 ## Troubleshooting
 
@@ -42,7 +44,7 @@ Pull requests are welcome! If you'd like to contribute to this project, please f
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License. See the LICENSE file for details.
 
 ## Known Issues
 
@@ -54,6 +56,11 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 * Add support for subfolders
 * Add support for file name conflicts
 * Improve error handling and logging
+
+## Requirements.txt
+
+The `requirements.txt` file for this project is empty, as the script does not require any external libraries. However, if you want to specify the Python version required to run the script, you can add a line like this to the `requirements.txt` file:
+
 ________________________________________________________________________________________________________________
 
 ##### Created by J Horsley III
