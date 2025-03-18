@@ -1,0 +1,2 @@
+tkinter
+python>=3.8
