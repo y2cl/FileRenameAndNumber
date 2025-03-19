@@ -14,6 +14,7 @@ This script allows you to select a folder and rename all files within it with a 
 * Option to undo changes
 * Log file creation with date of creation and only one log file per day
 * Help file with instructions on how to use the script
+* Automatically adds a number in sequence to each file in case of a file name conflict
 
 ## Requirements
 
@@ -40,6 +41,7 @@ This script allows you to select a folder and rename all files within it with a 
 
 * If you encounter any errors, check the console output for error messages
 * Make sure you have the necessary permissions to rename files in the selected folder
+* If a file with the same name already exists, the script will automatically add a number in sequence to the file name
 
 ## Updates
 
@@ -50,18 +52,19 @@ Here is a list of all updates since the last README was created:
 * Added a "Help" button that opens a help file with instructions on how to use the script
 * Updated the GUI to make it more readable and user-friendly
 * Added an option to undo changes
-* Updated the versioning to reflect the latest changes
+* Automatically adds a number in sequence to each file in case of a file name conflict
 
 ## Versioning
 
-This script is currently at version 1.5. Here is a breakdown of the versioning:
+This script is currently at version 1.6. Here is a breakdown of the versioning:
 
 * Version 1.0: Initial release
 * Version 1.1: Added error handling for file renaming
 * Version 1.2: Added option to rename more files or close the program after renaming
 * Version 1.3: Added log file creation with date of creation
 * Version 1.4: Added "Help" button and updated GUI
-* Version 1.5: Added option to undo changes and updated log file creation to include only one log file per day
+* Version 1.5: Added option to undo changes and updated log file creation to include only one log file per day. Automatically adds a number in sequence to each file in case of a file name conflict
+
 
 ## Contributing
 
@@ -74,7 +77,7 @@ This project is licensed under the MIT License. See the LICENSE file for details
 ## Known Issues
 
 * This script does not handle subfolders. If you need to rename files in subfolders, you will need to modify the script accordingly.
-* This script does not handle file name conflicts. If a file with the same name already exists, the script will overwrite it without warning.
+* This script does not handle file name conflicts in subfolders. If a file with the same name already exists in a subfolder, the script will overwrite it without warning.
 
 ## Requirements.txt
 
