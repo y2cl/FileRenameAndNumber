@@ -58,9 +58,13 @@ def rename_files():
 
                 # Check if the new file name already exists
                 if os.path.exists(new_file_path):
-                    status_label.config(text=f"File {new_filename} already exists. Skipping...", fg="red")
-                    logging.warning(f"File {new_filename} already exists. Skipping...")
-                    continue
+                    # Add a number in sequence to the file name
+                    base, extension = os.path.splitext(new_filename)
+                    j = 1
+                    while os.path.exists(new_file_path):
+                        new_filename = f"{base}-{str(j).zfill(2)}{extension}"
+                        new_file_path = os.path.join(folder_path, new_filename)
+                        j += 1
 
                 try:
                     os.rename(file_path, new_file_path)
