@@ -1,44 +1,42 @@
 Welcome to the File Renamer!
 
-This script allows you to rename files in a folder with a custom prefix and numbered suffix.
+This script allows you to rename files in a selected folder with a custom prefix and numbered suffix.
 
 To use the script, follow these steps:
 
-1. Enter the name to change in the "Name to change" field.
-2. Enter the search word (optional) in the "Search word" field.
-3. Select the folder path using the "Browse" button.
-4. Choose the mode (Rename with prefix or Add suffix) using the dropdown menu.
-5. Enter the suffix (optional) in the "Suffix" field.
-6. Click the "Rename files" button to rename the files.
+1. Enter a name for the files when prompted
+2. Enter a word to look for in file names when prompted (optional)
+3. Select the folder containing the files to rename when prompted
+4. The script will rename all files in the selected folder with the specified prefix and numbered suffix
+5. After renaming the files, you will have the option to rename more files or close the program
 
 Note: Make sure to test the script on a small set of files before using it on a large number of files.
 
 Recent Changes:
 
-* Added error handling for each button event handler to catch any exceptions that might occur when the buttons are clicked.
-* Updated the log file creation to include the date of creation and only one log file per day.
-* Added a "Help" button that opens a help file with instructions on how to use the script.
-* Updated the GUI to make it more readable and user-friendly.
+* Added error handling for each button event handler to catch any exceptions that might occur when the buttons are clicked
+* Updated the log file creation to include the date of creation and only one log file per day
+* Added a "Help" button that opens a help file with instructions on how to use the script
+* Updated the GUI to make it more readable and user-friendly
+* Added an option to undo changes
+* Automatically adds a number in sequence to each file in case of a file name conflict
 
 Troubleshooting:
 
-* If you encounter any errors, check the log file for more information.
-* If you are unable to rename files, make sure that the folder path is valid and that you have permission to rename files in that folder.
-* If you are unable to open the help file, make sure that the help file is located in the same directory as the script.
-
-Log File:
-
-* The log file is created in the same directory as the script and is named "file_renamer_YYYY-MM-DD.log", where YYYY-MM-DD is the current date.
-* The log file includes information about each file that is renamed, including the old and new file names.
-* The log file also includes any error messages that occur during the renaming process.
+* If you encounter any errors, check the console output for error messages
+* Make sure you have the necessary permissions to rename files in the selected folder
+* If a file with the same name already exists, the script will automatically add a number in sequence to the file name
 
 GUI Elements:
 
-* "Name to change" field: Enter the name to change in this field.
-* "Search word" field: Enter the search word (optional) in this field.
-* "Folder path" field: Select the folder path using the "Browse" button.
-* "Mode" dropdown menu: Choose the mode (Rename with prefix or Add suffix) using this dropdown menu.
-* "Suffix" field: Enter the suffix (optional) in this field.
-* "Rename files" button: Click this button to rename the files.
-* "Help" button: Click this button to open the help file.
-* "Browse" button: Click this button to select the folder path.
+* "Name to change" field: Enter a name for the files when prompted
+* "Search word" field: Enter a word to look for in file names when prompted (optional)
+* "Folder path" field: Select the folder containing the files to rename when prompted
+* "Mode" dropdown menu: Choose the mode (Rename with prefix or Add suffix) when prompted
+* "Suffix" field: Enter a suffix for the files when prompted (optional)
+* "Rename files" button: Click this button to rename the files
+* "Help" button: Click this button to open this help file
+* "Browse" button: Click this button to select the folder containing the files to rename
+
+##### Created by J Horsley III
+[http://y2cl.net](y2cl.net)
