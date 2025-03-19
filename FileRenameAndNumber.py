@@ -191,8 +191,8 @@ status_label.grid(row=7, column=1, padx=5, pady=5)
 root.mainloop()
 
 
-# Created by J Horsley III
-# File Rename and Number ver 0.3
+# Created by J Horsley III (2025)
+# File Rename and Number ver 1.5
 # Provided under GNU GPL v3 license, mofidy and use as you want.
 # If you like this script, check out my comics on my website below. They are funny and will make you laugh, cry, or cringe. 
 # https://y2cl.net
