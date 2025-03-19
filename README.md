@@ -1,87 +1,98 @@
-# File Renamer Script
-A simple Python script that renames files in a selected folder with a custom prefix and numbered suffix.
+# File Renamer
+A simple GUI application for renaming files in a folder.
 
-## Description
-This script allows you to select a folder and rename all files within it with a custom prefix and numbered suffix. The script also allows you to specify a word to look for in file names, so you can rename only files that contain a specific word.
+## Table of Contents
+1. [Introduction](#introduction)
+2. [Features](#features)
+3. [Requirements](#requirements)
+4. [Installation](#installation)
+5. [Usage](#usage)
+6. [Changelog](#changelog)
+7. [Versioning](#versioning)
+8. [License](#license)
+9. [Contributing](#contributing)
+
+## Introduction
+The File Renamer GUI is a simple application that allows users to rename files in a folder with a prefix or suffix. It also includes features to list files in a folder and save to CSV.
 
 ## Features
-
-* Renames files in a selected folder with a custom prefix and numbered suffix
-* Allows you to specify a word to look for in file names
-* Case-insensitive search
-* Handles potential errors (e.g., permission issues)
-* Option to rename more files or close the program after renaming
-* Option to undo changes
-* Log file creation with date of creation and only one log file per day
-* Help file with instructions on how to use the script
-* Automatically adds a number in sequence to each file in case of a file name conflict
+* Rename files in a folder with a prefix
+* Add a suffix to files in a folder
+* List files in a folder and save to CSV
+* Error handling to prevent program from crashing if an error occurs
+* Improved GUI updates to ensure progress bar and status label are updated properly
 
 ## Requirements
-
-* Python 3.x (tested on Python 3.8 and later)
-* `tkinter` library (comes pre-installed with Python)
-* `filedialog` library (comes pre-installed with Python)
+* Python 3.x
+* Tkinter library
 
 ## Installation
-
-1. Clone this repository to your local machine using `git clone https://github.com/your-username/file-renamer-python.git`
-2. Install the required libraries by running `pip install -r requirements.txt` (note: this script does not require any external libraries, so this step is optional)
-3. Run the script by executing `python file_renamer.py`
+1. Clone the repository using `git clone https://github.com/your-username/file-renamer-gui.git`
+2. Install the required libraries using `pip install -r requirements.txt`
+3. Run the application using `python main.py`
 
 ## Usage
+### Rename with Prefix
+1. Select a folder to rename files in
+2. Enter a prefix to add to the files
+3. Click the "Rename Files" button to rename the files
+4. The files will be renamed with the prefix and a number (e.g. "prefix_01_file.txt")
 
-1. Run the script by executing `python file_renamer.py`
-2. Enter a name for the files when prompted
-3. Enter a word to look for in file names when prompted (optional)
-4. Select the folder containing the files to rename when prompted
-5. The script will rename all files in the selected folder with the specified prefix and numbered suffix
-6. After renaming the files, you will have the option to rename more files or close the program
+### Add Suffix
+1. Select a folder to add a suffix to files in
+2. Enter a suffix to add to the files
+3. Click the "Add Suffix" button to add the suffix to the files
+4. The files will be renamed with the suffix (e.g. "file_suffix.txt")
 
-## Troubleshooting
+### List Files
+1. Select a folder to list files in
+2. Click the "List Files" button to list the files in the folder
+3. The files will be listed in a table with their name, size, and last modified date
+4. Click the "Save to CSV" button to save the file list to a CSV file
 
-* If you encounter any errors, check the console output for error messages
-* Make sure you have the necessary permissions to rename files in the selected folder
-* If a file with the same name already exists, the script will automatically add a number in sequence to the file name
+## Changelog
+### v1.0.0
+* Initial release of the File Renamer GUI application
+* Includes features to rename files with a prefix, add a suffix, and list files in a folder
+* Error handling to prevent program from crashing if an error occurs
 
-## Updates
+### v1.1.0
+* Fixed issue with buttons sometimes taking several clicks to work
+* Added error handling to prevent program from crashing if an error occurs while selecting a folder, collecting file information, or saving to CSV
+* Improved GUI updates to ensure progress bar and status label are updated properly
 
-Here is a list of all updates since the last README was created:
-
-* Added error handling for each button event handler to catch any exceptions that might occur when the buttons are clicked
-* Updated the log file creation to include the date of creation and only one log file per day
-* Added a "Help" button that opens a help file with instructions on how to use the script
-* Updated the GUI to make it more readable and user-friendly
-* Added an option to undo changes
-* Automatically adds a number in sequence to each file in case of a file name conflict
+### v1.2.0
+* Added three new parts to the application: Rename with Prefix, Add Suffix, and List Files
+* Each part has its own usage section in the README file
+* Updated the changelog to reflect the addition of the three new parts
 
 ## Versioning
-
-This script is currently at version 1.6. Here is a breakdown of the versioning:
-
-* Version 1.0: Initial release
-* Version 1.1: Added error handling for file renaming
-* Version 1.2: Added option to rename more files or close the program after renaming
-* Version 1.3: Added log file creation with date of creation
-* Version 1.4: Added "Help" button and updated GUI
-* Version 1.5: Added option to undo changes and updated log file creation to include only one log file per day. Automatically adds a number in sequence to each file in case of a file name conflict
-
-
-## Contributing
-
-Pull requests are welcome! If you'd like to contribute to this project, please fork the repository and submit a pull request with your changes.
+The File Renamer GUI application uses semantic versioning. The version number is in the format `MAJOR.MINOR.PATCH`, where:
+* `MAJOR` is the major version number, which is incremented when there are significant changes to the application.
+* `MINOR` is the minor version number, which is incremented when there are new features or improvements added to the application.
+* `PATCH` is the patch version number, which is incremented when there are bug fixes or minor changes made to the application.
 
 ## License
+The File Renamer GUI application is licensed under the MIT License.
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+## Contributing
+Contributions to the File Renamer GUI application are welcome. If you have any suggestions or bug reports, please submit an issue on the GitHub repository. If you would like to contribute code, please submit a pull request.
 
-## Known Issues
+Note: This is just a sample README file. You should modify it to fit your specific needs and changes.
 
-* This script does not handle subfolders. If you need to rename files in subfolders, you will need to modify the script accordingly.
-* This script does not handle file name conflicts in subfolders. If a file with the same name already exists in a subfolder, the script will overwrite it without warning.
+---
+### Commit History
+* `v1.2.0`: Added three new parts to the application: Rename with Prefix, Add Suffix, and List Files
+* `v1.1.0`: Fixed issue with buttons sometimes taking several clicks to work
+* `v1.0.0`: Initial release of the File Renamer GUI application
 
-## Requirements.txt
+### Known Issues
+* None
 
-The `requirements.txt` file for this project is empty, as the script does not require any external libraries. However, if you want to specify the Python version required to run the script, you can add a line like this to the `requirements.txt` file:
+### Future Development
+* Add support for multiple file types
+* Improve error handling for edge cases
+* Add more features to the application
 
 ________________________________________________________________________________________________________________
 
